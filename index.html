@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="时光慢慢，慢点变老">
+<meta property="og:type" content="website">
+<meta property="og:title" content="枫叶小爱的世界">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="枫叶小爱的世界">
+<meta property="og:description" content="时光慢慢，慢点变老">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="fengyexiaoai">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>枫叶小爱的世界</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">枫叶小爱的世界</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">过好这简单的一生</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">fengyexiaoai</p>
+  <div class="site-description" itemprop="description">时光慢慢，慢点变老</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/06/hexo_config/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="fengyexiaoai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫叶小爱的世界">
+      <meta itemprop="description" content="时光慢慢，慢点变老">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 枫叶小爱的世界">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/06/hexo_config/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-02-06 10:52:21 / 修改时间：10:04:47" itemprop="dateCreated datePublished" datetime="2023-02-06T10:52:21+08:00">2023-02-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>从官网下载：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a><br>git bash验证下，如下结果，说明安装成功了。<br>&amp;ensp; <img src="/./pic/nodejs_install_success_info.png" alt="avatar"></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>npm install -g hexo-cli<br>git bash验证下，如下结果，说明安装成功了。<br>&amp;ensp; <img src="/./pic/hexo_install_success_info.png" alt="avatar"></p>
+<h2 id="Blog初始化"><a href="#Blog初始化" class="headerlink" title="Blog初始化"></a>Blog初始化</h2><p>hexo init &#x2F; hexo init blog_dir_name</p>
+<blockquote>
+<p> hexo init fengye_blog</p>
+</blockquote>
+<p>如上会在目录下生成 fengye_blog 目录；‘</p>
+<h2 id="hexo生成和运行"><a href="#hexo生成和运行" class="headerlink" title="hexo生成和运行"></a>hexo生成和运行</h2><p>hexo generate(g)</p>
+<blockquote>
+<p>会在 fengye_blog\public\ 生成 index.html的静态网页；<br>&amp;ensp; <img src="/./pic/hexo_generate_success_info.png" alt="avatar"></p>
+</blockquote>
+<p>hexo server(s)</p>
+<blockquote>
+<p>运行后可以在 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 看到效果图</p>
+</blockquote>
+<h2 id="hexo-更新主题"><a href="#hexo-更新主题" class="headerlink" title="hexo 更新主题"></a>hexo 更新主题</h2><p>blog目录下直接clone对应的主题代码：</p>
+<blockquote>
+<p>git clone <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">https://github.com/iissnan/hexo-theme-next</a> themes&#x2F;next</p>
+</blockquote>
+<h3 id="配置hexo主题"><a href="#配置hexo主题" class="headerlink" title="配置hexo主题"></a>配置hexo主题</h3><h4 id="认识2个配置文件"><a href="#认识2个配置文件" class="headerlink" title="认识2个配置文件"></a>认识2个配置文件</h4><ul>
+<li>Next 主题配置文件<blockquote>
+<p>主要是配置 Next 主题相关的设置，不过不改仓库下的默认数据了，现在通过一个新的文件<mark> _config.next.yml </mark>修改就行。</p>
+</blockquote>
+</li>
+<li>Hexo 配置文件<blockquote>
+<p>Hexo 根目录下的文件———_config.yml，用于配置Hexo基本信息的。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="配置-favicon"><a href="#配置-favicon" class="headerlink" title="配置 favicon"></a>配置 favicon</h3><p>icon分几种:</p>
+<ol>
+<li>网站显示在浏览器tab中的icon；</li>
+<li>网站内的icon；</li>
+</ol>
+<h3 id="hexo配置的问题"><a href="#hexo配置的问题" class="headerlink" title="hexo配置的问题"></a>hexo配置的问题</h3><ul>
+<li>FATAL Port 4000 has been used. Try other port instead.<blockquote>
+<p>答：已经开了一个hexo 服务了，不过也可以指定端口：hexo s p xxxx</p>
+</blockquote>
+</li>
+<li>更新了Next主题后，网页显示不了？<blockquote>
+<p>答：删除后重新更新了下Next主题代码，然后就正常了；</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
+<li>简书blog： <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/343934573342">https://www.jianshu.com/p/343934573342</a></li>
+<li><a target="_blank" rel="noopener" href="https://baidinghub.github.io/2020/03/02/Windows%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#2%EF%BC%89%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E7%9A%84ssh%E5%88%B0Github%E4%B8%AD">https://baidinghub.github.io/2020/03/02/Windows%E4%B8%8B%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#2%EF%BC%89%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E7%9A%84ssh%E5%88%B0Github%E4%B8%AD</a></li>
+<li>Next 主题的官方配置说明：<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+<li>关于 .yaml 的说明：<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/configuration.html">https://theme-next.js.org/docs/getting-started/configuration.html</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/01/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="fengyexiaoai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫叶小爱的世界">
+      <meta itemprop="description" content="时光慢慢，慢点变老">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 枫叶小爱的世界">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-01 11:40:32" itemprop="dateCreated datePublished" datetime="2023-02-01T11:40:32+08:00">2023-02-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/06/const_/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="fengyexiaoai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫叶小爱的世界">
+      <meta itemprop="description" content="时光慢慢，慢点变老">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 枫叶小爱的世界">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/01/06/const_/" class="post-title-link" itemprop="url">const 那些事</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-01-06 00:00:00" itemprop="dateCreated datePublished" datetime="2023-01-06T00:00:00+08:00">2023-01-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-06 13:17:42" itemprop="dateModified" datetime="2023-02-06T13:17:42+08:00">2023-02-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/C-%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">C++基础</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="const-那些事"><a href="#const-那些事" class="headerlink" title="const 那些事"></a>const 那些事</h1><blockquote>
+<p>强烈推荐看：《C++编程思想-8章常量》。</p>
+</blockquote>
+<h2 id="1-const-含义"><a href="#1-const-含义" class="headerlink" title="1. const 含义"></a>1. const 含义</h2><p>const&#x3D;constant，<br>常类型是指使用类型修饰符const说明的类型，常类型的变量或对象的值是不能被更新的。<br>举个例子，就是 const int test_a &#x3D; 12, 你是没法给 test_a 赋值的。</p>
+<blockquote>
+<p><mark> const 关键字指定变量的值是常量，并通知编译器防止程序员对其进行修改。 </mark></p>
+</blockquote>
+<h3 id="经典一问：const-变量是否可以被修改？"><a href="#经典一问：const-变量是否可以被修改？" class="headerlink" title="经典一问：const 变量是否可以被修改？"></a>经典一问：const 变量是否可以被修改？</h3><p>答1：可以。const 修饰的始终是变量，如果const 变量位于栈区，那么是可以通过取地址修改。</p>
+<blockquote>
+<p><mark> 但是，如果const 变量位于全局，那么是不可以修改的。 </mark></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// const 变量可以修改的示例</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> kGlobalValue = <span class="number">312</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> const_value = <span class="number">100</span>;</span><br><span class="line">    <span class="type">int</span> * ptr = (<span class="type">int</span> *)&amp;const_value; <span class="comment">// 通过取const 变量的地址，就可以修改const变量的值。</span></span><br><span class="line">    *ptr = <span class="number">200</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span>* ptr_globale = (<span class="type">int</span>*)&amp;kGlobalValue;</span><br><span class="line">    *ptr_globale = <span class="number">400</span>; <span class="comment">// 运行的时候会报错哦！！！</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>答2：Linux上 全局常量是放在 .rdata段的，该段只读，所以尝试修改就会报错。<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/443582514">为什么C++无法修改全局静态常量？(Linux平台示例-知乎)</a></p>
+<h2 id="const作用"><a href="#const作用" class="headerlink" title="const作用"></a>const作用</h2><ul>
+<li>定义常量<blockquote>
+<p>const int a&#x3D;100;</p>
+</blockquote>
+</li>
+<li>类型检查<blockquote>
+<p>const常量有类型，编译器会进行安全检查；#define宏定义只是字符串替换，不进行安全检查；</p>
+<p> #define 也是有类型的，详细见：<a target="_blank" rel="noopener" href="https://github.com/Light-City/CPlusPlusThings/issues/5">讨论#define和const的类型问题</a></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<ol>
+<li>const 定义的变量只有类型为整数或枚举，且以常量表达式初始化时才能作为常量表达式。</li>
+<li><mark> <font color="red"> 其他情况下它只是一个 const 限定的变量，不要将与常量混淆。 </font> </mark></li>
+</ol>
+</blockquote>
+<ul>
+<li>防止修改，起保护作用，增加程序健壮性<blockquote>
+<p> 修饰函数参数等，如果参数被修改会保存。</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">f</span><span class="params">(<span class="type">const</span> <span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">    i++; <span class="comment">// error!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>节省空间，避免不必要的内存分配<blockquote>
+<p>const定义常量从汇编的角度来看，只是给出了对应的内存地址，而不是像#define一样给出的是立即数。</p>
+<p>const定义的常量在程序运行过程中只有一份拷贝，而#define定义的常量在内存中有若干个拷贝。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="理解常量和常量表达式"><a href="#理解常量和常量表达式" class="headerlink" title="理解常量和常量表达式"></a>理解常量和常量表达式</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6974714808444649503">理解常量和常量表达式——掘金blog</a></p>
+<h3 id="const的存储位置探究-Todo"><a href="#const的存储位置探究-Todo" class="headerlink" title="const的存储位置探究(Todo)"></a>const的存储位置探究(Todo)</h3><ol>
+<li>const修饰的量不是常量，仅仅是个只读量。在编译的时候全部替换赋值的const常量，类似#define替换；<br><mark> 在运行的时候该const变量可通过内存进行修改。</mark><blockquote>
+<p>总结来说就是，const修饰的数据，编译的时候会进行替换，这样被赋值的数据运行的时候数据是编译期定好的。<br> <mark> 即使你修改了 const 修饰的变量，被赋值的数据不会因为运行时的修改而变化。  </mark><br>但是const 能修改的前提必须是可读可写的，比如栈上的变量，全局的就不行。</p>
+</blockquote>
+</li>
+<li></li>
+<li><a target="_blank" rel="noopener" href="https://bbs.csdn.net/topics/340089467">CSDN关于const存储位置的讨论</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43152052/article/details/99306967">CSDN总结的blog, 我觉得写的还可以</a></li>
+</ol>
+<h2 id="const对象的范围"><a href="#const对象的范围" class="headerlink" title="const对象的范围"></a>const对象的范围</h2><p>默认为文件局部变量。<br>注意：<mark> 非const变量默认为extern。要使const变量能够在其他文件中访问，必须在文件中显式地指定它为extern。 </mark></p>
+<blockquote>
+<p>非const修饰的变量在不同文件的访问</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// file1.cpp</span></span><br><span class="line"><span class="type">int</span> ext = <span class="number">132</span>; <span class="comment">// 默认都可以访问</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// file2.cpp</span></span><br><span class="line"><span class="comment">// 需要指定ext为extern变量，否则找不到。</span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">int</span> ext;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> test_ext = ext;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>const 修饰的变量在不同文件的访问<br><mark > const 修饰的想外部访问，定义的时候就得加 extern；且需要初始化。</mark></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// file1.cpp</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> ext_const_def = <span class="number">132</span>; <span class="comment">// 默认当前文件可访问</span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">const</span> <span class="type">int</span> ext_const_extern = <span class="number">312</span>; <span class="comment">// 想外部访问，需要定义的时候指定为 extern</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// file2.cpp</span></span><br><span class="line"><span class="comment">// 需要指定ext为extern变量，否则找不到。</span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">const</span> <span class="type">int</span> ext_const_extern;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> test_ext = ext_const_extern;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>extern const 未初始化会报链接错误：无法解析的外部符号；<br><img src="/2023/01/06/const_/extern_const_not_init_error_tip.png" alt="avatar">  </p>
+<h2 id="const用法"><a href="#const用法" class="headerlink" title="const用法"></a>const用法</h2><h3 id="const修饰普通类型的变量"><a href="#const修饰普通类型的变量" class="headerlink" title="const修饰普通类型的变量"></a>const修饰普通类型的变量</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> b = <span class="number">10</span>; </span><br><span class="line">b = <span class="number">0</span>; <span class="comment">// error: assignment of read-only variable ‘b’</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 等价于</span></span><br><span class="line"><span class="type">int</span> <span class="type">const</span> b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> string s = <span class="string">&quot;helloworld&quot;</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> i,j=<span class="number">0</span> <span class="comment">// error: uninitialized const ‘i’</span></span><br></pre></td></tr></table></figure>
+<p><mark> 作为常量，直接赋值修改是不行的哦！ </mark><br><mark> 作为常量，必须初始化哦！ </mark>      </p>
+<blockquote>
+<p> <font color="red"> C2734	“const_value”: 如果不是外部的，则必须初始化常量对象。	</font></p>
+</blockquote>
+<h3 id="const与指针"><a href="#const与指针" class="headerlink" title="const与指针"></a>const与指针</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">char</span> * a; <span class="comment">// 指向常量的指针，a 指针类型是 const char 的，即指向的内容不能被修改。</span></span><br><span class="line"><span class="type">char</span> <span class="type">const</span> * a; <span class="comment">// 同上</span></span><br><span class="line"><span class="type">char</span> * <span class="type">const</span> a; <span class="comment">// 指针本身是常量即 a 这个地址是常量，不能被修改， 也称常指针、const指针。</span></span><br><span class="line"><span class="type">const</span> <span class="type">char</span> * <span class="type">const</span> a; <span class="comment">// 指向const对象的const指针。</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="常量指针：-指向的对象是常量。不能修改指针所指向的内容。"><a href="#常量指针：-指向的对象是常量。不能修改指针所指向的内容。" class="headerlink" title="常量指针： 指向的对象是常量。不能修改指针所指向的内容。 "></a>常量指针：<mark> 指向的对象是常量。不能修改指针所指向的内容。 </mark></h4><blockquote>
+<p><mark> const 位于 * 的左侧，则const就是用来修饰指针所指向的变量，即指针指向为常量； </mark></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> const_test_a = <span class="number">123</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span>* const_ptr_a; <span class="comment">// 指向常量的指针 不初始化是OK的</span></span><br><span class="line">    const_ptr_a = &amp;const_test_a; <span class="comment">// 赋值给常量指针的时候，可以是 const，也可以是非const。</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 可以修改 const_test_a 的值，只是不能通过 *const_ptr_a 来修改</span></span><br><span class="line">    <span class="type">int</span>* ptr_test_a = &amp;const_test_a;</span><br><span class="line">    *ptr_test_a = <span class="number">312</span>; <span class="comment">// OK的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>常量指针的注意点：</p>
+<ol>
+<li>const_ptr_a 指针不用赋初值，但不能通过 const_ptr_a 修改所指向的对象的值；</li>
+<li>不能使用void<em>指针保存const对象的地址，必须使用const void</em>类型的指针保存const对象的地址；</li>
+<li>可以把非const对象的地址赋值给 const 对象的指针；但不能通过 const 定义的那个指针修改对象值。</li>
+</ol>
+<h4 id="指针常量：-指针本身是常量。不能修改指针的地址。"><a href="#指针常量：-指针本身是常量。不能修改指针的地址。" class="headerlink" title="指针常量： 指针本身是常量。不能修改指针的地址。 "></a>指针常量：<mark> 指针本身是常量。不能修改指针的地址。 </mark></h4><blockquote>
+<p><mark> const 位于 * 的右侧，const就是修饰指针本身，即指针本身是常量。  </mark></p>
+</blockquote>
+<p>指针常量的注意点</p>
+<ol>
+<li>const指针必须初始化，且const指针的值不能修改。（就是说const指针存储的地址不能动哦）</li>
+<li><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> num=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> * <span class="type">const</span> ptr=&amp;num; <span class="comment">//const指针必须初始化！且const指针的值不能修改</span></span><br><span class="line">    <span class="type">int</span> * t = &amp;num; <span class="comment">// 通过取地址得到 num 的地址，就可以修改 num的值。</span></span><br><span class="line">    *t = <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// 总结一下：*ptr，*t 其实都是保存的 num的地址，只不过 *ptr是const修饰的，不能直接改num的值。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="指向常量的常指针"><a href="#指向常量的常指针" class="headerlink" title="指向常量的常指针"></a>指向常量的常指针</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> p = <span class="number">3</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> * <span class="type">const</span> ptr = &amp;p; <span class="comment">// ptr指向的是常量，且ptr本身是一个const指针，保存的地址不能动。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/151797945">知乎关于const指针讲的比较容易懂的blog</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19829354">通俗易懂理解什么是常量指针和指针常量——知乎</a></p>
+<h3 id="const应用到函数中"><a href="#const应用到函数中" class="headerlink" title="const应用到函数中"></a>const应用到函数中</h3><ul>
+<li>const修饰函数返回值<ul>
+<li><ol>
+<li>const int —— 本身无意义，函数返回本身就是要赋值给其他变量的。<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">const</span> <span class="type">int</span> <span class="title">func1</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><ol start="2">
+<li>const int* —— 指针指向的内容不变<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">const</span> <span class="type">int</span>* <span class="title">func2</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><ol start="3">
+<li>int* const —— 指针本身即指针的地址不能变<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">int</span> *<span class="type">const</span> <span class="title">func2</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>const修饰函数参数   <ul>
+<li><ol>
+<li>传过来的参数以及指针本身在函数内不可变，没有意义<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 编译环境 msvc2017</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">func</span><span class="params">(<span class="type">const</span> <span class="type">int</span> var)</span></span>; <span class="comment">// 传递过来的参数不可变</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">func</span><span class="params">(<span class="type">int</span> *<span class="type">const</span> var)</span></span>; <span class="comment">// 指针本身不可变</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">TestConstPtr</span><span class="params">(<span class="type">int</span> *<span class="type">const</span> var)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> test = *var;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> num = <span class="number">3211</span>;</span><br><span class="line">    <span class="type">int</span> * <span class="type">const</span> ptr_num = &amp;num; <span class="comment">//const指针必须初始化！且const指针的值不能修改</span></span><br><span class="line">    <span class="built_in">TestConstPtr</span>(ptr_num);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 确认 结果：</span></span><br><span class="line"><span class="comment">// &amp;ptr_num：</span></span><br><span class="line"><span class="comment">// &amp;var：</span></span><br><span class="line"><span class="comment">// 上面2个地址是不同的，所以 var 是函数参数的临时变量。</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> <mark> 值传递方式， 形参本身会产生临时变量，参数无需保护，所以加不加const没有意义。 </mark><br> const int var 和 int *const var 都是值传递。<br> <mark> 理解下 int *const var 为什么没有意义？<br> 答1：const修饰的是指针本身，所以此处只是修饰 var 本身不变；<br> 答2：另外，指针传递的时候，var 指向的数据依然可能被修改，所以只限制 var 本身没有意义。 </mark></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>参数指针指向的内容为常量不可变 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">StringCopy</span><span class="params">(<span class="type">char</span> *dst, <span class="type">const</span> <span class="type">char</span> *src)</span></span>; <span class="comment">// 限定 char* 可以保证指向的内容不被修改</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> <mark> 试图修改 src 时，编译会报错。 </mark></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>参数为引用，为了增加效率同时防止修改 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">funcA</span><span class="params">(<span class="type">const</span> A a)</span></span>; <span class="comment">// 值传递，效率低，对象的构造、复制、析构都会消耗时间。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">funcA</span><span class="params">(<span class="type">const</span> A&amp; a)</span></span>; <span class="comment">// 使用引用——变量的别名，避免值传递的开销。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">funcA</span><span class="params">(<span class="type">const</span> A&amp; a)</span></span>; <span class="comment">// const限定对象的引用   </span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">funcA</span><span class="params">(<span class="type">const</span> std::string&amp; value)</span></span>; <span class="comment">// 具体例子：std::string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 一个疑问： 是否所有的都用引用更好？</span></span><br><span class="line"><span class="comment">// 答：没有必要，因为内部数据类型的参数不存在构造、析构的过程，而复制也非常快，“值传递”和“引用传递”的效率几乎相当。</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">funcA</span><span class="params">(<span class="type">const</span> <span class="type">int</span>&amp; a)</span></span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><mark> 1. 引用只是参数的别名而已，不需要产生临 时对象。 2. const 限定的引用，可以避免引用被修改。 </mark></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>const 引用传递的使用场景</p>
+<ul>
+<li>非内部数据做输入参数：建议使用 const 引用，提高效率；</li>
+<li>内部数据类型做输入参数：不建议用，比如 int、double 等类型；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="const类中的用法"><a href="#const类中的用法" class="headerlink" title="const类中的用法"></a>const类中的用法</h3><ul>
+<li><p>const成员函数：只要不修改数据成员，就应该声明为const；</p>
+<blockquote>
+<p><mark> const对象只能访问const成员函数，而非const对象可以访问任意的成员函数,包括const成员函数. </mark><br>const 成员函数调用非const成员函数的不行的哦！<br>  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// const成员函数调用 非const成员函数示例，编译报错</span></span><br><span class="line"><span class="comment">// E1086   对象含有与成员 函数 &quot;Apple::FuncB&quot; 不兼容的类型限定符</span></span><br><span class="line"><span class="comment">// C2662: “int Apple::FuncB(void)”: 不能将“this”指针从“const Apple”转换为“Apple &amp;”</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">   解释下 C2662: “int Apple::FuncB(void)”: 不能将“this”指针从“const Apple”转换为“Apple &amp;”</span></span><br><span class="line"><span class="comment">   </span></span><br><span class="line"><span class="comment">   FunA中调用FuncB的时候，要加入this。</span></span><br><span class="line"><span class="comment">   this-&gt;FuncB();  </span></span><br><span class="line"><span class="comment">   ≈</span></span><br><span class="line"><span class="comment">   const Apple* this-&gt;FuncB(); // FuncB() 本身是非const的，所以报错了。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Apple</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Apple</span>(<span class="type">int</span> i) : <span class="built_in">apple_number</span>(i)&#123;</span><br><span class="line">        app_id = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">FuncA</span><span class="params">()</span> <span class="type">const</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> rest = <span class="number">123</span>;</span><br><span class="line">        <span class="built_in">FuncB</span>();        <span class="comment">//  error， 不能将“this”指针从“const Apple”转换为“Apple &amp;”</span></span><br><span class="line">        <span class="keyword">return</span> rest;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">FuncB</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> people[<span class="number">100</span>];</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> apple_number;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> app_code = <span class="number">312</span>;</span><br><span class="line">    <span class="type">int</span> app_id;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>  <strong>理解下为什么 const 对象只能访问 const 成员函数？为什么const成员函数中调用非const成员就会报错？</strong></p>
+<blockquote>
+<p>答：理解下 this 指针就能明白为什么了。 <font color="red">this 指针是成员函数默认参数，也是有类型的，const 成员类型就是const的。</font><br>而</p>
+</blockquote>
+</li>
+<li><p>const成员变量</p>
+<ul>
+<li>必须通过初始化列表进行初始化 or 定义的时候初始化。<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Apple</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Apple</span>(<span class="type">int</span> i) &#123;</span><br><span class="line">        apple_number = i; <span class="comment">// error，编译错误，『表达式必须是可以修改的左值』。</span></span><br><span class="line">        apple_number = <span class="number">123</span>; <span class="comment">// 如上一样。</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">Apple</span>(<span class="type">int</span> i) : <span class="built_in">apple_number</span>(i) &#123; <span class="comment">// 放到初始化列表是OK的 </span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">Apple</span>(<span class="type">int</span> i) : <span class="built_in">apple_number</span>(<span class="number">100</span>) &#123; <span class="comment">// 不使用构造参数也是OK的</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">FuncA</span><span class="params">(<span class="type">int</span> posx, <span class="type">int</span> posy)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> posx + posy;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> people[<span class="number">100</span>];</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> apple_number;</span><br><span class="line"></span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> app_code = <span class="number">312</span>; <span class="comment">// const int 这么初始化也是OK的。</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> appid;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="查看C-类的内存结构方法"><a href="#查看C-类的内存结构方法" class="headerlink" title="查看C++类的内存结构方法"></a>查看C++类的内存结构方法</h3><ul>
+<li>查看所有类：&#x2F;d1 reportAllClassLayout</li>
+<li>查看单个类：&#x2F;d1 reportSingleClassLayoutXXX（XXX为类名）<blockquote>
+<p>&#x2F;d1 参数统一放到 C&#x2F;C++ → 命令行：其他选项   </p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 一个简单的类内存布局，没有虚函数等</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 编译的时候会输出布局</span></span><br><span class="line"><span class="comment">    1&gt;class Apple	size(412):</span></span><br><span class="line"><span class="comment">    1&gt;	+---</span></span><br><span class="line"><span class="comment">    1&gt; 0	| people</span></span><br><span class="line"><span class="comment">    1&gt;400	| apple_number</span></span><br><span class="line"><span class="comment">    1&gt;404	| app_code</span></span><br><span class="line"><span class="comment">    1&gt;408	| app_id</span></span><br><span class="line"><span class="comment">    1&gt;	+---</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//  如上，静态成员归属于所有类，所以布局上看不到。</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Apple</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Apple</span>(<span class="type">int</span> i) : <span class="built_in">apple_number</span>(i)&#123;</span><br><span class="line">        app_id = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">FuncA</span><span class="params">()</span> <span class="type">const</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> rest = <span class="number">123</span>;</span><br><span class="line">        <span class="built_in">FuncB</span>();</span><br><span class="line">        <span class="keyword">return</span> rest;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">FuncB</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> people[<span class="number">100</span>];</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> apple_number;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> app_code = <span class="number">312</span>;</span><br><span class="line">    <span class="type">int</span> app_id;</span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> s_test_a; <span class="comment">// 类的static 类内声明，不能初始化哦！</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">int</span> Apple::s_test_a = <span class="number">212</span>; <span class="comment">// static 必须类外初始化！！！</span></span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhjblogs/p/14274231.html">查看C++类的内存结构方法_例子写的很好的blog</a></li>
+</ul>
+<h3 id="理解this指针"><a href="#理解this指针" class="headerlink" title="理解this指针"></a>理解this指针</h3><p><strong>先说编译器怎么做的？</strong></p>
+<ol>
+<li><p>this 实际上是成员函数的一个形参，在调用成员函数时将对象的地址作为实参传递给this。 </p>
+</li>
+<li><p><mark> this 形参是隐式的，并不出现在代码中，而是编译阶段由编译器默默地将它添加到参数列表中。且只有非静态成员函数哦！</mark></p>
+</li>
+<li><p><mark> <font color="red"> 成员函数最终被编译成与对象无关的普通函数，除了成员变量，会丢失所有信息。<br>所以编译时要在成员函数中添加一个额外的参数，把当前对象的首地址传入，以此来关联成员函数和成员变量。</font> </mark></p>
+</li>
+<li><p>示例：int FuncA(int posx, int posy); 编译时可能变成了 int FuncA(Apple* this, int posx, int posy) 【不一定是这个结果，只用于示例说明】</p>
+</li>
+</ol>
+<h4 id="总结一下this是什么？"><a href="#总结一下this是什么？" class="headerlink" title="总结一下this是什么？"></a>总结一下this是什么？</h4><p><strong>答：<mark> this是编译器加给c++类的非static成员函数的额外参数，用于管理类的成员函数和变量。作为参数也有类型限定，比如使用const。</mark></strong> </p>
+<p><strong>作为参数，this指针也是有类型的。</strong></p>
+<blockquote>
+<p><mark> this的类型取决于成员函数的声明情况。<br><font color="red"> const 方法时，指针类型就是 const Apple<em>， 非const 就是 Apple</em> </font>。  </mark></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">FuncA</span><span class="params">(<span class="type">int</span> posx)</span> </span>&#123; </span><br><span class="line">     appid = posx;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line"> &#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">FuncB</span><span class="params">(<span class="type">int</span> posx)</span> <span class="type">const</span> </span>&#123; </span><br><span class="line">     appid = posx;</span><br><span class="line">     <span class="built_in">FuncA</span>();</span><br><span class="line">     <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 经过编译之后，加上 this 指针的结果(个人理解，如有错误请指正)</span></span><br><span class="line"> <span class="function"><span class="type">int</span> <span class="title">FuncA</span><span class="params">(Apple*<span class="keyword">this</span>, <span class="type">int</span> posx)</span> </span>&#123; </span><br><span class="line">     <span class="keyword">this</span>-&gt;appid = posx;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line"> &#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">FuncB</span><span class="params">(<span class="type">const</span> Apple*<span class="keyword">this</span>, <span class="type">int</span> posx)</span> <span class="type">const</span> </span>&#123; </span><br><span class="line">     <span class="keyword">this</span>-&gt;appid = posx;</span><br><span class="line">     <span class="keyword">this</span>-&gt;<span class="built_in">FuncA</span>(); <span class="comment">// erro。这儿就相当于是 const 对象 调用 非const 接口</span></span><br><span class="line">     <span class="keyword">return</span> <span class="number">123</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/this-pointer-in-c/">C++中的this指针_geeksforgeeks</a><br><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2226.html">C语言中文对于this指针的讲解_最后的this是什么说的还可以</a></p>
+<h2 id="const和-define区别"><a href="#const和-define区别" class="headerlink" title="const和#define区别"></a>const和#define区别</h2><ul>
+<li>const <blockquote>
+<p><mark> 修饰的是一个真正的变量，对于变量，你当然可以做任何事情。 </mark><br>因为常量值在编译时已经被替换和折叠，所以不存在性能问题。</p>
+</blockquote>
+</li>
+<li>#define：<blockquote>
+<p>只是字符串替换，<br><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/6442328/what-is-the-difference-between-define-and-const">stackoverflow_difference-between-define-and-const</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ol>
+<li>主要是参考Github上的c++那些事：<a target="_blank" rel="noopener" href="https://github.com/Light-City/CPlusPlusThings">https://github.com/Light-City/CPlusPlusThings</a></li>
+<li>MSDN对于const的说明：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/cpp/cpp/const-cpp?view=msvc-170">https://learn.microsoft.com/zh-cn/cpp/cpp/const-cpp?view=msvc-170</a></li>
+<li>极客笔记c++ const的使用：<a target="_blank" rel="noopener" href="https://deepinout.com/cpp-tutorial/cpp-tutorial-const-usage.html">https://deepinout.com/cpp-tutorial/cpp-tutorial-const-usage.html</a></li>
+<li></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fengyexiaoai</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
